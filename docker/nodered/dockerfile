@@ -1,0 +1,4 @@
+FROM nodered/node-red
+USER root
+RUN apk add py3-pip curl busybox-extras
+RUN pip3 install fabric
